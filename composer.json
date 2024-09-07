@@ -7,6 +7,7 @@
     "require": {
         "php": "^8.2",
         "biscolab/laravel-recaptcha": "^6.1",
+        "creagia/laravel-sign-pad": "^2.1",
         "facebook/php-business-sdk": "^20.0",
         "fiveam-code/laravel-notion-api": "^1.2",
         "guzzlehttp/guzzle": "^7.9",

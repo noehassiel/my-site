@@ -1,0 +1,226 @@
+/*TYPOGRAPHY*/
+@font-face {
+    font-family: "Gellix";
+    src: url("../fonts/Gellix-Regular.ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gellix";
+    src: url("../fonts/Gellix-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Sk Concretica";
+    src: url("../fonts/SK-Concretica_Regular.otf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: "Gellix";
+}
+
+body {
+    background: rgb(22, 22, 22);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 7.3vw;
+}
+
+h2 {
+    font-size: 6vw;
+}
+
+h3 {
+    font-size: 4.1vw;
+}
+
+.kursor,
+.kursorChild {
+    mix-blend-mode: difference !important;
+}
+
+.logo {
+    font-family: "Sk Concretica";
+    font-size: 3.5rem;
+    color: white;
+}
+
+.logo span {
+    font-size: 1.4rem;
+    font-family: "Gellix";
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+}
+
+nav h1 {
+    margin-bottom: 0;
+}
+
+.hero {
+    min-height: 110vh;
+    height: auto;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.hero .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 12vw;
+}
+
+p {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: .3px;
+}
+
+.hero img {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.dark-s {
+    color: white;
+}
+
+.white-s {
+    background: #EEEBE6;
+    color: #3D3D3B;
+}
+
+.timeline-bar {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-bar h6,
+.timeline-bar p {
+    margin-bottom: 0;
+}
+
+.timeline-bar .bar {
+    background: white;
+    width: 100%;
+    height: 7px;
+    margin: 8px 0;
+}
+
+.table-price {
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.modal-dialog {
+    width: 400px;
+}
+
+.modal-content {
+    background: #3D3D3B;
+    color: #EEEBE6;
+}
+
+.modal-header {
+    background-image: url("../img/modal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: none;
+}
+
+.modal .btn-close {
+    background: #3d3d3b86;
+    border-radius: 100px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:48em) {
+    .timeline-bar.col-md-2 {
+        height: 110px;
+    }
+
+    .timeline-bar.col-md-4 {
+        height: 200px;
+    }
+
+    .timeline-bar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .timeline-bar .bar {
+        width: 7px;
+        height: 100%;
+        margin-right: 50px;
+    }
+
+    .timeline-bar h6 {
+        order: 1;
+        font-size: 25px;
+    }
+
+    .timeline-bar p {
+        order: 2;
+        margin-left: 15px;
+    }
+}
+
+.movil-nav {
+    background: #EEEBE6;
+    z-index: 11;
+    left: -100%;
+    transition: all .4s ease-in-out;
+}
+
+.movil-nav .textcircle text {
+    color: #3D3D3B;
+    fill: #3D3D3B;
+}
+
+.movil-nav.view {
+    left: 0;
+}
