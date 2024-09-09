@@ -14,7 +14,7 @@
 
     @yield('content')
 
-    @include('layout.footer')
+    @include('front.layout.footer')
 
 </body>
 
